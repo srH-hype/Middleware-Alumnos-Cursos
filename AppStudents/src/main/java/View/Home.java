@@ -4,6 +4,10 @@
  */
 package View;
 
+import BussinessObject.Course;
+import BussinessObject.Student;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
 import java.awt.event.KeyEvent;
 
 /**
@@ -335,11 +339,20 @@ public class Home extends javax.swing.JFrame {
      */
     private void jbConsultCoursesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbConsultCoursesActionPerformed
         if (!jtName.getText().isBlank() && !jtLastName1.getText().isBlank() && !jtLastName2.getText().isBlank() && !jtID.getText().isBlank() && !jtSemester.getText().isBlank()){
-            // Create object
+             // Create object
+            Student st = new Student(jtName.getText() + " " + jtLastName1.getText() + " " + jtLastName2.getText(), jtID.getText(), Integer.parseInt(jtSemester.getText()));
             // Send data through socket
+            Gson gson = new Gson();
+            JsonElement element = gson.toJsonTree(st); 
+            
         }
     }//GEN-LAST:event_jbConsultCoursesActionPerformed
 
+    private void jsonToJava(JsonElement jsonElement){
+            
+//           Gson gson = new Gson();
+//           gson.fromJson(element, Course.class);    
+   }
     /**
      * @param args the command line arguments
      */
