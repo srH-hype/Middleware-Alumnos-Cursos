@@ -4,6 +4,8 @@
  */
 package View;
 
+import java.awt.event.KeyEvent;
+
 /**
  *
  * @author orlandocamacho
@@ -27,7 +29,25 @@ public class Home extends javax.swing.JFrame {
     private void initComponents() {
 
         jpStudentData = new javax.swing.JPanel();
+        jlSemester = new javax.swing.JLabel();
+        jtSemester = new javax.swing.JTextField();
+        jsSemester = new javax.swing.JSeparator();
+        jlName = new javax.swing.JLabel();
+        jtName = new javax.swing.JTextField();
+        jsName = new javax.swing.JSeparator();
+        jlLastName1 = new javax.swing.JLabel();
+        jtLastName1 = new javax.swing.JTextField();
+        jsLastName1 = new javax.swing.JSeparator();
+        jlLastName2 = new javax.swing.JLabel();
+        jtLastName2 = new javax.swing.JTextField();
+        jsLastName = new javax.swing.JSeparator();
+        jlID = new javax.swing.JLabel();
+        jtID = new javax.swing.JTextField();
+        jsID = new javax.swing.JSeparator();
+        jbConsultCourses = new javax.swing.JButton();
         jpCourses = new javax.swing.JPanel();
+        jspTable = new javax.swing.JScrollPane();
+        jtCourses = new javax.swing.JTable();
         jpStatus = new javax.swing.JPanel();
         jlStatus = new javax.swing.JLabel();
         jpHeader = new javax.swing.JPanel();
@@ -43,15 +63,156 @@ public class Home extends javax.swing.JFrame {
 
         jpStudentData.setBackground(new java.awt.Color(255, 255, 255));
         jpStudentData.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jlSemester.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jlSemester.setForeground(new java.awt.Color(51, 51, 51));
+        jlSemester.setText("Semestre:");
+        jpStudentData.add(jlSemester, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, 20));
+
+        jtSemester.setBackground(new java.awt.Color(255, 255, 255));
+        jtSemester.setForeground(new java.awt.Color(51, 51, 51));
+        jtSemester.setBorder(null);
+        jtSemester.setIgnoreRepaint(true);
+        jpStudentData.add(jtSemester, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 210, 20));
+        jpStudentData.add(jsSemester, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 210, 10));
+
+        jlName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jlName.setForeground(new java.awt.Color(51, 51, 51));
+        jlName.setText("Nombre:");
+        jpStudentData.add(jlName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 20));
+
+        jtName.setBackground(new java.awt.Color(255, 255, 255));
+        jtName.setForeground(new java.awt.Color(51, 51, 51));
+        jtName.setBorder(null);
+        jtName.setIgnoreRepaint(true);
+        jtName.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jtNameKeyTyped(evt);
+            }
+        });
+        jpStudentData.add(jtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 210, 20));
+        jpStudentData.add(jsName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 210, 10));
+
+        jlLastName1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jlLastName1.setForeground(new java.awt.Color(51, 51, 51));
+        jlLastName1.setText("Apellido paterno:");
+        jpStudentData.add(jlLastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 20));
+
+        jtLastName1.setBackground(new java.awt.Color(255, 255, 255));
+        jtLastName1.setForeground(new java.awt.Color(51, 51, 51));
+        jtLastName1.setBorder(null);
+        jtLastName1.setIgnoreRepaint(true);
+        jpStudentData.add(jtLastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 210, 20));
+        jpStudentData.add(jsLastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 210, 10));
+
+        jlLastName2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jlLastName2.setForeground(new java.awt.Color(51, 51, 51));
+        jlLastName2.setText("Apellido materno:");
+        jpStudentData.add(jlLastName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 20));
+
+        jtLastName2.setBackground(new java.awt.Color(255, 255, 255));
+        jtLastName2.setForeground(new java.awt.Color(51, 51, 51));
+        jtLastName2.setBorder(null);
+        jtLastName2.setIgnoreRepaint(true);
+        jpStudentData.add(jtLastName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 210, 20));
+        jpStudentData.add(jsLastName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 210, 10));
+
+        jlID.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jlID.setForeground(new java.awt.Color(51, 51, 51));
+        jlID.setText("ID:");
+        jpStudentData.add(jlID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, 20));
+
+        jtID.setBackground(new java.awt.Color(255, 255, 255));
+        jtID.setForeground(new java.awt.Color(51, 51, 51));
+        jtID.setBorder(null);
+        jtID.setIgnoreRepaint(true);
+        jpStudentData.add(jtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 210, 20));
+        jpStudentData.add(jsID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 210, 10));
+
+        jbConsultCourses.setBackground(new java.awt.Color(13, 85, 136));
+        jbConsultCourses.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
+        jbConsultCourses.setForeground(new java.awt.Color(255, 255, 255));
+        jbConsultCourses.setText("Consultar cursos");
+        jbConsultCourses.setToolTipText("");
+        jbConsultCourses.setBorderPainted(false);
+        jbConsultCourses.setFocusable(false);
+        jpStudentData.add(jbConsultCourses, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 150, 20));
+
         getContentPane().add(jpStudentData, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 250, 350));
 
         jpCourses.setBackground(new java.awt.Color(255, 255, 255));
         jpCourses.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jspTable.setBackground(new java.awt.Color(255, 255, 255));
+        jspTable.setForeground(new java.awt.Color(51, 51, 51));
+        jspTable.setOpaque(false);
+
+        jtCourses.setBackground(new java.awt.Color(255, 255, 255));
+        jtCourses.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jtCourses.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "ID", "Materia", "Horas", "Puntos"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.Double.class
+            };
+            boolean[] canEdit = new boolean [] {
+                false, false, true, false
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+
+            public boolean isCellEditable(int rowIndex, int columnIndex) {
+                return canEdit [columnIndex];
+            }
+        });
+        jtCourses.setFocusTraversalKeysEnabled(false);
+        jtCourses.setFocusable(false);
+        jtCourses.setGridColor(new java.awt.Color(153, 153, 153));
+        jtCourses.setOpaque(false);
+        jtCourses.setRequestFocusEnabled(false);
+        jtCourses.setRowHeight(25);
+        jtCourses.setSelectionBackground(new java.awt.Color(13, 85, 136));
+        jtCourses.setSelectionForeground(new java.awt.Color(255, 255, 255));
+        jtCourses.setSelectionMode(javax.swing.ListSelectionModel.SINGLE_SELECTION);
+        jtCourses.setShowGrid(true);
+        jtCourses.setSurrendersFocusOnKeystroke(true);
+        jtCourses.setUpdateSelectionOnSort(false);
+        jtCourses.setVerifyInputWhenFocusTarget(false);
+        jspTable.setViewportView(jtCourses);
+        if (jtCourses.getColumnModel().getColumnCount() > 0) {
+            jtCourses.getColumnModel().getColumn(0).setResizable(false);
+            jtCourses.getColumnModel().getColumn(0).setPreferredWidth(50);
+            jtCourses.getColumnModel().getColumn(1).setResizable(false);
+            jtCourses.getColumnModel().getColumn(1).setPreferredWidth(350);
+            jtCourses.getColumnModel().getColumn(2).setResizable(false);
+            jtCourses.getColumnModel().getColumn(3).setResizable(false);
+        }
+
+        jpCourses.add(jspTable, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 410, 310));
+
         getContentPane().add(jpCourses, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 450, 350));
 
         jpStatus.setBackground(new java.awt.Color(255, 255, 255));
         jpStatus.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jlStatus.setForeground(new java.awt.Color(102, 102, 102));
         jlStatus.setText("Enviando datos del alumno... - Esperando respuesta del servidor... - Recibiendo datos de los cursos...");
         jpStatus.add(jlStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 680, 20));
 
@@ -90,6 +251,12 @@ public class Home extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    private void jtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtNameKeyTyped
+        if (!Character.isLetter(evt.getKeyChar()) && !(evt.getKeyChar() == KeyEvent.VK_SPACE) && !(evt.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {
+            evt.consume();    
+        } 
+    }//GEN-LAST:event_jtNameKeyTyped
+
     /**
      * @param args the command line arguments
      */
@@ -126,9 +293,15 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jbConsultCourses;
     private javax.swing.JLabel jlCoursesSectionTitle;
+    private javax.swing.JLabel jlID;
+    private javax.swing.JLabel jlLastName1;
+    private javax.swing.JLabel jlLastName2;
     private javax.swing.JLabel jlLogo;
     private javax.swing.JLabel jlMainTitle;
+    private javax.swing.JLabel jlName;
+    private javax.swing.JLabel jlSemester;
     private javax.swing.JLabel jlStatus;
     private javax.swing.JLabel jlStudentSectionTitle;
     private javax.swing.JPanel jpCourses;
@@ -136,5 +309,17 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel jpStatus;
     private javax.swing.JPanel jpStudentData;
     private javax.swing.JPanel jpTitles;
+    private javax.swing.JSeparator jsID;
+    private javax.swing.JSeparator jsLastName;
+    private javax.swing.JSeparator jsLastName1;
+    private javax.swing.JSeparator jsName;
+    private javax.swing.JSeparator jsSemester;
+    private javax.swing.JScrollPane jspTable;
+    private javax.swing.JTable jtCourses;
+    private javax.swing.JTextField jtID;
+    private javax.swing.JTextField jtLastName1;
+    private javax.swing.JTextField jtLastName2;
+    private javax.swing.JTextField jtName;
+    private javax.swing.JTextField jtSemester;
     // End of variables declaration//GEN-END:variables
 }
