@@ -29,15 +29,15 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        jPanel2 = new javax.swing.JPanel();
+        jpHeader = new javax.swing.JPanel();
+        jpSectionsNames = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jPanel3 = new javax.swing.JPanel();
-        jLabel10 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        jlMainName = new javax.swing.JLabel();
+        jlISW = new javax.swing.JLabel();
+        jpStatus = new javax.swing.JPanel();
+        jlStatus = new javax.swing.JLabel();
+        jpStudentData = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         jtName = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
@@ -54,65 +54,65 @@ public class Home extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jSeparator5 = new javax.swing.JSeparator();
         jbConsultCourses = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
-        jScrollPane1 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jpCourses = new javax.swing.JPanel();
+        jspCoursesTable = new javax.swing.JScrollPane();
+        jtCourses = new javax.swing.JTable();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel1.setBackground(new java.awt.Color(15, 109, 181));
-        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpHeader.setBackground(new java.awt.Color(15, 109, 181));
+        jpHeader.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel2.setBackground(new java.awt.Color(13, 85, 136));
-        jPanel2.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpSectionsNames.setBackground(new java.awt.Color(13, 85, 136));
+        jpSectionsNames.setForeground(new java.awt.Color(255, 255, 255));
+        jpSectionsNames.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("Datos del alumno");
-        jPanel2.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 210, 30));
+        jpSectionsNames.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 0, 210, 30));
 
         jLabel4.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel4.setText("Cursos ofertados disponibles para el alumno");
-        jPanel2.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 410, 30));
+        jpSectionsNames.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 0, 410, 30));
 
-        jPanel1.add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 700, 30));
+        jpHeader.add(jpSectionsNames, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 50, 700, 30));
 
-        jLabel2.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        jLabel2.setText("Oferta educativa de cursos");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 10, 290, 30));
+        jlMainName.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jlMainName.setForeground(new java.awt.Color(255, 255, 255));
+        jlMainName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        jlMainName.setText("Oferta educativa de cursos");
+        jpHeader.add(jlMainName, new org.netbeans.lib.awtextra.AbsoluteConstraints(392, 10, 290, 30));
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("ISW");
-        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, 30));
+        jlISW.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jlISW.setForeground(new java.awt.Color(255, 255, 255));
+        jlISW.setText("ISW");
+        jpHeader.add(jlISW, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, 120, 30));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 80));
+        getContentPane().add(jpHeader, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 700, 80));
 
-        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpStatus.setBackground(new java.awt.Color(255, 255, 255));
+        jpStatus.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel10.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(102, 102, 102));
-        jLabel10.setText("Enviando datos del alumno... - Esperando respuesta del servidor... - Recibiendo datos de los cursos...");
-        jPanel3.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 680, 20));
+        jlStatus.setFont(new java.awt.Font("Arial", 0, 13)); // NOI18N
+        jlStatus.setForeground(new java.awt.Color(102, 102, 102));
+        jlStatus.setText("Enviando datos del alumno... - Esperando respuesta del servidor... - Recibiendo datos de los cursos...");
+        jpStatus.add(jlStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 0, 680, 20));
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 700, 20));
+        getContentPane().add(jpStatus, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 430, 700, 20));
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpStudentData.setBackground(new java.awt.Color(255, 255, 255));
+        jpStudentData.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setBackground(java.awt.Color.white);
         jLabel5.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(51, 51, 51));
         jLabel5.setText("Nombre:");
-        jPanel4.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 20));
+        jpStudentData.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, -1, 20));
 
         jtName.setBackground(new java.awt.Color(255, 255, 255));
         jtName.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -124,14 +124,14 @@ public class Home extends javax.swing.JFrame {
                 jtNameKeyTyped(evt);
             }
         });
-        jPanel4.add(jtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 210, 20));
-        jPanel4.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 210, 10));
+        jpStudentData.add(jtName, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, 210, 20));
+        jpStudentData.add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 210, 10));
 
         jLabel6.setBackground(java.awt.Color.white);
         jLabel6.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(51, 51, 51));
         jLabel6.setText("Apellido paterno:");
-        jPanel4.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, 20));
+        jpStudentData.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, 20));
 
         jtLastName1.setBackground(new java.awt.Color(255, 255, 255));
         jtLastName1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -143,15 +143,15 @@ public class Home extends javax.swing.JFrame {
                 jtLastName1KeyTyped(evt);
             }
         });
-        jPanel4.add(jtLastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 210, 20));
-        jPanel4.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, 210, 10));
-        jPanel4.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 210, 10));
+        jpStudentData.add(jtLastName1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, 210, 20));
+        jpStudentData.add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 110, 210, 10));
+        jpStudentData.add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 210, 10));
 
         jLabel7.setBackground(java.awt.Color.white);
         jLabel7.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(51, 51, 51));
         jLabel7.setText("Apellido materno:");
-        jPanel4.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, 20));
+        jpStudentData.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, 20));
 
         jtLastName2.setBackground(new java.awt.Color(255, 255, 255));
         jtLastName2.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -163,14 +163,14 @@ public class Home extends javax.swing.JFrame {
                 jtLastName2KeyTyped(evt);
             }
         });
-        jPanel4.add(jtLastName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 160, 210, 20));
+        jpStudentData.add(jtLastName2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 210, 20));
 
         jLabel8.setBackground(java.awt.Color.white);
         jLabel8.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(51, 51, 51));
         jLabel8.setText("ID:");
-        jPanel4.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, -1, 20));
-        jPanel4.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 210, 10));
+        jpStudentData.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, -1, 20));
+        jpStudentData.add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, 210, 10));
 
         jtID.setBackground(new java.awt.Color(255, 255, 255));
         jtID.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -182,7 +182,7 @@ public class Home extends javax.swing.JFrame {
                 jtIDKeyTyped(evt);
             }
         });
-        jPanel4.add(jtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 210, 20));
+        jpStudentData.add(jtID, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 210, 20));
 
         jtSemester.setBackground(new java.awt.Color(255, 255, 255));
         jtSemester.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -194,14 +194,14 @@ public class Home extends javax.swing.JFrame {
                 jtSemesterKeyTyped(evt);
             }
         });
-        jPanel4.add(jtSemester, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 210, 20));
+        jpStudentData.add(jtSemester, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 210, 20));
 
         jLabel9.setBackground(java.awt.Color.white);
         jLabel9.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(51, 51, 51));
         jLabel9.setText("Semestre");
-        jPanel4.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, 20));
-        jPanel4.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 210, 10));
+        jpStudentData.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, 20));
+        jpStudentData.add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, 210, 10));
 
         jbConsultCourses.setBackground(new java.awt.Color(13, 85, 136));
         jbConsultCourses.setFont(new java.awt.Font("Arial", 1, 12)); // NOI18N
@@ -212,20 +212,20 @@ public class Home extends javax.swing.JFrame {
                 jbConsultCoursesActionPerformed(evt);
             }
         });
-        jPanel4.add(jbConsultCourses, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 310, 150, -1));
+        jpStudentData.add(jbConsultCourses, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 150, 30));
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 250, 350));
+        getContentPane().add(jpStudentData, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 80, 250, 350));
 
-        jPanel5.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel5.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jpCourses.setBackground(new java.awt.Color(255, 255, 255));
+        jpCourses.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jScrollPane1.setBackground(new java.awt.Color(255, 255, 255));
-        jScrollPane1.setForeground(new java.awt.Color(51, 51, 51));
-        jScrollPane1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jspCoursesTable.setBackground(new java.awt.Color(255, 255, 255));
+        jspCoursesTable.setForeground(new java.awt.Color(51, 51, 51));
+        jspCoursesTable.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
 
-        jTable1.setBackground(new java.awt.Color(255, 255, 255));
-        jTable1.setForeground(new java.awt.Color(51, 51, 51));
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jtCourses.setBackground(new java.awt.Color(255, 255, 255));
+        jtCourses.setForeground(new java.awt.Color(51, 51, 51));
+        jtCourses.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
                 {null, null, null, null},
@@ -251,42 +251,58 @@ public class Home extends javax.swing.JFrame {
                 return canEdit [columnIndex];
             }
         });
-        jTable1.setGridColor(new java.awt.Color(153, 153, 153));
-        jTable1.setRowHeight(25);
-        jTable1.setShowGrid(true);
-        jScrollPane1.setViewportView(jTable1);
-        if (jTable1.getColumnModel().getColumnCount() > 0) {
-            jTable1.getColumnModel().getColumn(0).setResizable(false);
-            jTable1.getColumnModel().getColumn(0).setPreferredWidth(30);
-            jTable1.getColumnModel().getColumn(1).setResizable(false);
-            jTable1.getColumnModel().getColumn(1).setPreferredWidth(200);
+        jtCourses.setGridColor(new java.awt.Color(153, 153, 153));
+        jtCourses.setRowHeight(25);
+        jtCourses.setShowGrid(true);
+        jspCoursesTable.setViewportView(jtCourses);
+        if (jtCourses.getColumnModel().getColumnCount() > 0) {
+            jtCourses.getColumnModel().getColumn(0).setResizable(false);
+            jtCourses.getColumnModel().getColumn(0).setPreferredWidth(30);
+            jtCourses.getColumnModel().getColumn(1).setResizable(false);
+            jtCourses.getColumnModel().getColumn(1).setPreferredWidth(200);
         }
 
-        jPanel5.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 410, 310));
+        jpCourses.add(jspCoursesTable, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 410, 310));
 
-        getContentPane().add(jPanel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 450, 350));
+        getContentPane().add(jpCourses, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 80, 450, 350));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    /**
+     * Validates that only characters are entered 
+     * @param evt 
+     */
     private void jtNameKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtNameKeyTyped
         if (!Character.isLetter(evt.getKeyChar()) && !(evt.getKeyChar() == KeyEvent.VK_SPACE) && !(evt.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {
             evt.consume();    
         } 
     }//GEN-LAST:event_jtNameKeyTyped
 
+    /**
+     * Validates that only characters are entered
+     * @param evt 
+     */
     private void jtLastName1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtLastName1KeyTyped
         if (!Character.isLetter(evt.getKeyChar()) && !(evt.getKeyChar() == KeyEvent.VK_SPACE) && !(evt.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {
             evt.consume();    
         } 
     }//GEN-LAST:event_jtLastName1KeyTyped
 
+    /**
+     * Validates that only characters are entered
+     * @param evt 
+     */
     private void jtLastName2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtLastName2KeyTyped
         if (!Character.isLetter(evt.getKeyChar()) && !(evt.getKeyChar() == KeyEvent.VK_SPACE) && !(evt.getKeyChar() == KeyEvent.VK_BACK_SPACE)) {
             evt.consume();    
         } 
     }//GEN-LAST:event_jtLastName2KeyTyped
 
+    /**
+     * Validate that only numbers are entered
+     * @param evt 
+     */
     private void jtIDKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtIDKeyTyped
         char c = evt.getKeyChar();
         if (c < '0' || c > '9') {
@@ -297,6 +313,10 @@ public class Home extends javax.swing.JFrame {
             evt.consume();
     }//GEN-LAST:event_jtIDKeyTyped
 
+    /**
+     * Validate that only numbers are entered
+     * @param evt 
+     */
     private void jtSemesterKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jtSemesterKeyTyped
         char c = evt.getKeyChar();
         if (c < '0' || c > '8') {
@@ -309,8 +329,15 @@ public class Home extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_jtSemesterKeyTyped
 
+    /**
+     * Send the student's data to consult the available courses
+     * @param evt 
+     */
     private void jbConsultCoursesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbConsultCoursesActionPerformed
-        
+        if (!jtName.getText().isBlank() && !jtLastName1.getText().isBlank() && !jtLastName2.getText().isBlank() && !jtID.getText().isBlank() && !jtSemester.getText().isBlank()){
+            // Create object
+            // Send data through socket
+        }
     }//GEN-LAST:event_jbConsultCoursesActionPerformed
 
     /**
@@ -349,9 +376,6 @@ public class Home extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
@@ -359,19 +383,22 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
-    private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
-    private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JTable jTable1;
     private javax.swing.JButton jbConsultCourses;
+    private javax.swing.JLabel jlISW;
+    private javax.swing.JLabel jlMainName;
+    private javax.swing.JLabel jlStatus;
+    private javax.swing.JPanel jpCourses;
+    private javax.swing.JPanel jpHeader;
+    private javax.swing.JPanel jpSectionsNames;
+    private javax.swing.JPanel jpStatus;
+    private javax.swing.JPanel jpStudentData;
+    private javax.swing.JScrollPane jspCoursesTable;
+    private javax.swing.JTable jtCourses;
     private javax.swing.JTextField jtID;
     private javax.swing.JTextField jtLastName1;
     private javax.swing.JTextField jtLastName2;
