@@ -10,4 +10,12 @@
         <maven.compiler.source>16</maven.compiler.source>
         <maven.compiler.target>16</maven.compiler.target>
     </properties>
+    
+    <dependencies>
+    <dependency>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>20201115</version>
+    </dependency>
+    </dependencies>
 </project>
